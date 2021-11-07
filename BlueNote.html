@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<HTML>
+    <meta charset="utf-8">
+    <head>
+        <link href="../folder/images/nicklahara.png" rel="icon">
+        <title>BlueNote Newspaper</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <script src="../folder/css/jquery-2.1.4.js"></script>
+        <script src="javascript/bluenote.js"></script>   
+        <style>
+            #imgs img{
+                width: 100%;
+                height: 400px;
+                position: absolute;
+                transition: all 1s;
+                visibility: hidden;
+            }
+            #navbottom p{
+                visibility: hidden;
+            }
+            #nav li{
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body onload="load()">
+        <header>
+            <div class="judul"><span class="biru">Blue</span>Note <p class="newspaper">newspaper</p></div>
+            <ul class="ulsocial">
+                <a href=""><li class="social">f</li></a>
+                <a href=""><li class="social">t</li></a>
+                <a href=""><li class="social">ig</li></a>
+                <a href=""><li class="social">g+</li></a>
+                <li class="social"><span class="glyphicon glyphicon-user"></span></li>
+                <div class="user">
+                    <a href=""><p class="puser">Log In</p></a>
+                    <a href=""><p class="puser">Register</p></a>
+                </div>
+                <li class="social"><span class="glyphicon glyphicon-cog"></span></li>
+                <div class="setting">
+                    <a href=""><p class="puser">Log In</p></a>
+                    <a href=""><p class="puser">Register</p></a>
+                </div>
+                <li class="social">INA edition <span class="glyphicon glyphicon-triangle-bottom"></span></li>
+                <div class="edition">
+                    <a href=""><p class="puser">ENG edition</p></a>
+                    <a href=""><p class="puser">ITA edition</p></a>
+                    <a href=""><p class="puser">FRA edition</p></a>
+                    <a href=""><p class="puser">GER edition</p></a>
+                    <a href=""><p class="puser">JPN edition</p></a>
+                    <a href=""><p class="puser">CHN edition</p></a>
+                    <a href=""><p class="puser">RUS edition</p></a>
+                </div>
+            </ul>            
+        </header>
+        <div class="subheader">
+            <ul>
+                <li class="menu"><button type="button" class="btnhome"><a href=""><span class="glyphicon glyphicon-home"></span></a></button></li>
+                <li class="menu"><a href="#">WORLD</a></li>
+                <li class="menu"><a href="">OPINION</a></li>
+                <li class="menu"><a href="">SPORT</a></li>
+                <li class="menu"><a href="">TECHNOLOGY</a></li>
+                <li class="menu"><a href="">ART</a></li>
+                <li class="menu"><a href="">LIFESTYLE</a></li>
+                <li class="menu"><a href="">FASHION</a></li>
+                <li class="menu"><a href="">BUSSINESS</a></li>
+                <li class="menu"><a href="">TRAVEL</a></li>
+                <li class="menu"><a href="">SCIENCE</a></li>
+                <li class="menu">
+                    <input type="text" class="searchtxt">
+                    <button type="button" class="btncari"><span class="glyphicon glyphicon-search"</button>
+                </li>
+            </ul>
+        </div>
+        <div id="slider">
+            <div id="imgs">
+                <img src="../folder/images/a.jpg" id="img1">
+                <img src="../folder/images/from-my-relationships-with-small-family-farms-coffee-comes-the-finest-in-the-world-slide-01.jpg" id="img2">
+                <img src="../folder/images/essence-bakery-hamburger.jpg" id="img3">
+                <img src="../folder/images/labaguette-wholesale-bakery.jpg" id="img4">
+                <img src="../folder/images/1%20(3).jpg" id="img5">
+            </div>
+        </div>
+        <div id="navbottom">
+                <p id="SP0" class="espe"><span class="atjeh">Atjeh Tengah</span><br>This is description about this image and you can type whatever you want whatever you like cause i have no idea for type the description my brain is tired</p>
+                <p id="SP1" class="espe"><span class="atjeh">Coffee Gayo</span><br>This is description about this image and you can type whatever you want whatever you like cause i have no idea for type the description my brain is tired</p>
+                <p id="SP2" class="espe"><span class="atjeh">New Menu On Nick Donald</span><br>This is description about this image and you can type whatever you want whatever you like cause i have no idea for type the description my brain is tired</p>
+                <p id="SP3" class="espe"><span class="atjeh">The New Bread Shop</span><br>This is description about this image and you can type whatever you want whatever you like cause i have no idea for type the description my brain is tired</p>
+                <p id="SP4" class="espe"><span class="atjeh">Jobs For You</span><br>This is description about this image and you can type whatever you want whatever you like cause i have no idea for type the description my brain is tired</p>
+            </div>
+        <div id="nav">
+                <ul>
+                    <li id="S0" class="navli" onclick="satu()"></li>
+                    <li id="S1" class="navli" onclick="dua()"></li>
+                    <li id="S2" class="navli" onclick="tiga()"></li>
+                    <li id="S3" class="navli" onclick="empat()"></li>
+                    <li id="S4" class="navli" onclick="lima()"></li>
+                </ul>
+            </div>         
+                <button type="button" id="left" onclick="prev()"><span class="glyphicon glyphicon-menu-left"></span></button>
+                <button type="button" id="right" onclick="next()"><span class="glyphicon glyphicon-menu-right"></span></button>
+        <div class="container">
+            <div class="headlines">Headlines<br>
+                <span id="hari"></span><br>
+                <span id="tanggal"></span>
+            </div>
+            <div class="mainheadline">
+                <div class="firstheadline">
+                    <div class="insthead"><span class="title">The New Candy Shop Has Been Opened in Medan on 29 May Ago</span><br><br><p>This is description about the title. You can type whatever you want whatever you like and up to you. i don't know what description that i have to type on this. so i give you a chance to type. don't miss it cause i just give one chance no more two three </p><br><span class="glyphicon glyphicon-comment"></span>120 comments</div>
+                    <img src="../folder/images/big-top-candy-shop-1.jpg" class="imgsthead">
+                </div>
+                <div class="garis"></div>
+                <div class="secheadline">
+                    <img src="../folder/images/24.jpg" class="imgsecheadline">
+                    <button type="button" class="btnplay"><span class="glyphicon glyphicon-play"></span></button>
+                    <div class="ketsechead">Gerhana Matahari Total di Indonesia</div>
+                </div>
+                <div class="secheadline">
+                <img src="../folder/images/image002.jpg" class="imgsecheadline">
+                    <div class="ketsechead2">Gerhana Matahari Total di Indonesia</div>
+                </div>
+            </div>
+            <div class="secmainheadline"></div>
+        </div>
+            
+    </body>
+</HTML>
